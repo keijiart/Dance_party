@@ -1,3 +1,9 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy import stats
+import seaborn as sns
+
 def choose_statistic(x, sample_stat_text):
   # calculate mean if the text is "Mean"
   if sample_stat_text == "Mean":
@@ -45,4 +51,3 @@ def sampling_distribution(population_data, samp_size, stat):
   plt.legend()
   plt.show()
   plt.clf()
-  
